@@ -6,11 +6,10 @@ MeetupsController = AppController.extend({
     meetups: Meetups.find({})
   },
   onAfterAction: function () {
-    Meta.setTitle('Dashboard');
+    Meta.setTitle('Meetups');
   }
 });
 
 MeetupsController.events({
-
-  }
+  
 });
