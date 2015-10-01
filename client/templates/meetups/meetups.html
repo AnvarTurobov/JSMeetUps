@@ -6,7 +6,9 @@
 
     <ul class="list-group">
       {{#each meetups}}
-        <li class="list-group-item">{{ title }} <span class="label label-default">{{ city }}</span></li>
+      <li class="list-group-item">{{ title }} <span class="label label-default">{{ city }}</span></li>
+      {{else}}
+      <p>There are currently no meetups scheduled- be the first to create one!</p>
       {{/each}}
     </ul>
 

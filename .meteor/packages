@@ -29,3 +29,4 @@ accounts-facebook
 accounts-google
 service-configuration
 chrismbeckett:toastr
+tsega:bootstrap3-datetimepicker

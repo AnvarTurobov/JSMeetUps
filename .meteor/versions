@@ -83,6 +83,7 @@ spacebars-compiler@1.0.6
 srp@1.0.3
 templating@1.1.1
 tracker@1.0.7
+tsega:bootstrap3-datetimepicker@4.17.37_1
 twitter@1.1.4
 ui@1.0.6
 underscore@1.0.3
