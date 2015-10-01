@@ -15,8 +15,8 @@ Router.route('/meetups', {
 Router.route('/meetups/add', {
   name: 'addMeetup',
   controller: 'MeetupsController'
-})
+});
 
 Router.plugin('ensureSignedIn', {
-  only: ['dashboard']
+  only: ['dashboard', 'addMeetup']
 });
