@@ -40,5 +40,13 @@ DashboardController.events({
     Router.go('/dashboard');
 
     return false;
-  }
+  },
+    'click .remove-meetup': function(event){
+      if(confirm("Are you sure?")) {
+        Meteor.call('removeMeetup', event.currentTargetId);
+        toastr.success("Meetup removed");
+        return false;
+      }
+
+    }
 });
