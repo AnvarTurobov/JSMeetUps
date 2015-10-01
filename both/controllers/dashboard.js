@@ -1,13 +1,8 @@
 DashboardController = AppController.extend({
   waitOn: function() {
-    return this.subscribe('items');
+    return this.subscribe('mymeetups');
   },
-  data: {
-    items: Items.find({})
-  },
-  onAfterAction: function () {
-    Meta.setTitle('Dashboard');
-  }
+
 });
 
 DashboardController.events({
