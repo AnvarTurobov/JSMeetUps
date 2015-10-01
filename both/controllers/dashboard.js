@@ -31,13 +31,13 @@ DashboardController.events({
       city: city,
       postcode: postcode,
       meetupdate: meetupdate,
-      createdAt: new Date()
+      updatedAt: new Date()
     }
 
-    Meteor.call('addMeetup', params); //inserting meetup
+    Meteor.call('updateMeetup', id, params); 
 
-    toastr.success('Meetup Added');
-    Router.go('/meetups');
+    toastr.success('Meetup updated');
+    Router.go('/dashboard');
 
     return false;
   }
