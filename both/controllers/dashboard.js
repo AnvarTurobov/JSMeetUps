@@ -3,6 +3,12 @@ DashboardController = AppController.extend({
     return this.subscribe('mymeetups');
   },
 
+  DashboardController.helpers({
+    'mymeetups': function(){
+      return Meetups.find({user: Meteor.userId()})
+    }
+  })
+
 });
 
 DashboardController.events({
