@@ -6,8 +6,8 @@ Meteor.startup(function() {
       appId: "xxxxxxxxxxxxxxxxxxxx",
       secret: "xxxxxxxxxxxxxxxxxxx"
     }
-    },
-    { upsert: true }
+  },
+  { upsert: true }
   );
 
   // Add Google configuration entry
@@ -18,8 +18,8 @@ Meteor.startup(function() {
       client_email: "XXXXXXXXXXXXXXXXXXXXXXXXXXX",
       secret: "XXXXXXXXXXXXXXXXXXXXXXXX"
     }
-    },
-    { upsert: true }
+  },
+  { upsert: true }
   );
 
   // Add Twitter configuration entry
@@ -29,8 +29,8 @@ Meteor.startup(function() {
       consumerKey: "XXXXXXXXXXXX",
       secret: "XXXXXXXX"
     }
-    },
-    { upsert: true }
+  },
+  { upsert: true }
   );
 
   // Add GitHub configuration entry
@@ -40,8 +40,8 @@ Meteor.startup(function() {
       clientId: "0f90e849f997ef974e39",
       secret: "6f87531d4a9f29b0186a61cc9b5321ab1839d88b"
     }
-    },
-    { upsert: true }
+  },
+  { upsert: true }
   );
 
 });
