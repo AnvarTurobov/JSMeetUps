@@ -30,7 +30,7 @@ MeetupsController.events({
     city: city,
     postcode: postcode,
     user: Meteor.userId(),
-    username: Meteor.user().username,
+    username: Meteor.user().username,  //need to fix this as some users dont have username- as they logged in via social logins
     meetupdate: meetupdate,
     createdAt: new Date()
   }
