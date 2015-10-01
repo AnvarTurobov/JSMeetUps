@@ -1,14 +1,13 @@
 DashboardController = AppController.extend({
   waitOn: function() {
     return this.subscribe('mymeetups');
-  },
+  }
+});
 
-  DashboardController.helpers({
-    'mymeetups': function(){
-      return Meetups.find({user: Meteor.userId()})
-    }
-  })
-
+DashboardController.helpers({
+  'mymeetups': function(){
+    return Meetups.find({user: Meteor.userId()})
+  }
 });
 
 DashboardController.events({

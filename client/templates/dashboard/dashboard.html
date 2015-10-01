@@ -1,10 +1,10 @@
 <template name="dashboard">
   <div class="template-dashboard">
     <div class="page-header">
-      <h1>Meetups</h1>
+      <h1>My Meetups</h1>
     </div>
     <ul class="list-group">
-      {{#each meetups}}
+    {{#each mymeetups}}
       <li class="list-group-item"><a data-toggle="modal" data-target="#modal{{_id}}">{{ title }}</a><span class="label label-default">{{ city }}</span></li>
       <!-- Modal -->
       <div class="modal fade" id="modal{{_id}}" tabindex="-1" role="dialog" aria-labelledby="modal{{_id}}Label">
@@ -22,7 +22,7 @@
                 <li class="list-group-item">Meetup Type: {{type}}</li>
                 <li class="list-group-item">Contact Email: {{email}}</li>
               </ul>
-              <p class="well">Posted By: {{username}}</p>
+             <!--  <p class="well">Posted By: {{username}}</p> -->
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -31,7 +31,7 @@
         </div>
       </div>
       {{else}}
-      <p>There are currently no meetups scheduled- be the first to create one!</p>
+      <p>You havent set up any meetups yet.</p>
       {{/each}}
     </ul>
   </div>
