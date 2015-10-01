@@ -41,12 +41,12 @@ DashboardController.events({
 
     return false;
   },
+
     'click .remove-meetup': function(event){
       if(confirm("Are you sure?")) {
-        Meteor.call('removeMeetup', event.currentTargetId);
+        Meteor.call("removeMeetup", event.currentTarget.id);
         toastr.success("Meetup removed");
         return false;
       }
-
     }
 });
