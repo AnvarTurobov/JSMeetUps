@@ -38,6 +38,7 @@ MeetupsController.events({
   Meteor.call('addMeetup', params); //inserting meetup
 
   toastr.success('Meetup Added');
+  Router.go('/meetups');
 
   return false;
 }
