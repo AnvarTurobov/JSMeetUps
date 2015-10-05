@@ -37,8 +37,8 @@ Meteor.startup(function() {
   ServiceConfiguration.configurations.update(
     { service: "github" },
     { $set: {
-      clientId: "0f90e849f997ef974e39",
-      secret: "6f87531d4a9f29b0186a61cc9b5321ab1839d88b"
+      clientId: process.env.GITHUB_CLIENT_ID,
+      secret: process.env.GITHUB_SECRET
     }
   },
   { upsert: true }
